@@ -10,7 +10,8 @@ public class App {
     public static void main(String[] args) throws FileNotFoundException, IOException {
 
         String apiKey = System.getenv("apiKey");
-
+        // api key do imdb armazenada em uma variável de ambiente,
+        // afim de ocultar a chave api do código, tornando assim segura para uso
         String url = "https://imdb-api.com/en/API/Top250Movies/" + apiKey;
 
         HttpClient client = HttpClient.newHttpClient();
