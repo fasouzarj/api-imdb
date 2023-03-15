@@ -15,7 +15,7 @@ public class App {
         props.load(new FileInputStream("config.properties"));
       
         String apiKey = props.getProperty("api.key");    
-        String url = "https://imdb-api.com/en/API/Top250Movies/"+ apiKey;
+        String url = "https://imdb-api.com/en/API/Top250Movies/" + apiKey;
         
         HttpClient client = HttpClient.newHttpClient();
         HttpRequest request = HttpRequest.newBuilder()
