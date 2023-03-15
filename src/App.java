@@ -11,8 +11,8 @@ public class App {
 
         String apiKey = System.getenv("apiKey");
 
-        String url = "https://imdb-api.com/en/API/Top250Movies/"+ apiKey;
-        
+        String url = "https://imdb-api.com/en/API/Top250Movies/" + apiKey;
+
         HttpClient client = HttpClient.newHttpClient();
         HttpRequest request = HttpRequest.newBuilder()
                 .uri(URI.create(url))
